@@ -1,5 +1,5 @@
 import React from "react";
-import { Anchor, Box, Main } from "grommet";
+import { Anchor, Box } from "grommet";
 
 class Body extends React.Component {
   render() {
