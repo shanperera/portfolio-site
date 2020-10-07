@@ -8,7 +8,7 @@ class Header extends React.Component {
         direction="row-responsive"
         align="center"
         justify="between"
-        background={this.props.color}
+        background={this.props.background}
         pad={this.props.pad}
         elevation={this.props.elevation}
         border={this.props.border}

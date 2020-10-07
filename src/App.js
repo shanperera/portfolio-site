@@ -9,7 +9,7 @@ const theme = {
       brand: "#a770ef",
     },
     font: {
-      family: "Sansita Swashed",
+      family: "Lato",
       size: "18px",
       height: "24px",
     },
