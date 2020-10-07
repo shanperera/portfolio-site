@@ -1,6 +1,6 @@
 import React from "react";
-import { Grommet } from "grommet";
 import SiteHeader from "./components/SiteHeader";
+import 'semantic-ui-css/semantic.min.css'
 
 
 const theme = {
@@ -9,7 +9,7 @@ const theme = {
       brand: "#a770ef",
     },
     font: {
-      family: "Lato",
+      family: "Sansita Swashed",
       size: "18px",
       height: "24px",
     },
@@ -18,11 +18,7 @@ const theme = {
 
 function App() {
   return (
-    <Grommet theme={theme}>
-      <SiteHeader>
-        
-      </SiteHeader>
-    </Grommet>
+    <div></div>
   );
 }
 
