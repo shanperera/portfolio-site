@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Main } from "grommet";
+import { Anchor, Box, Main } from "grommet";
 
 class Body extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class Body extends React.Component {
         margin={{ horizontal: "large" }}
         pad="medium"
       >
-        <h1><a href="#Work" name="Work"></a>Work</h1>
+        <h1><Anchor href="#Work" name="Work"></Anchor>Work</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           imperdiet nibh lorem, a commodo neque pharetra non. Sed cursus tortor
@@ -64,7 +64,7 @@ class Body extends React.Component {
           tortor fringilla at.{" "}
         </p>
 
-        <h1><a href="#Skills" name="Skills"></a>Skills</h1>
+        <h1><Anchor href="#Skills" name="Skills"></Anchor>Skills</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           imperdiet nibh lorem, a commodo neque pharetra non. Sed cursus tortor
@@ -118,7 +118,7 @@ class Body extends React.Component {
           tortor fringilla at.{" "}
         </p>
 
-        <h1><a href="#About" name="About"></a>About</h1>
+        <h1><Anchor href="#About" name="About"></Anchor>About</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           imperdiet nibh lorem, a commodo neque pharetra non. Sed cursus tortor
