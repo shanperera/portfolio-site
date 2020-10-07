@@ -1,7 +1,6 @@
 import React from "react";
 import { Anchor, Box } from "grommet";
 import Header from "./Header";
-import SiteAnchor from "./SiteAnchor";
 
 class SiteHeader extends React.Component {
   render() {
