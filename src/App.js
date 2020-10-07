@@ -1,7 +1,7 @@
 import React from "react";
-import SiteHeader from "./components/SiteHeader";
+import { Grommet } from 'grommet';
+import SiteHeader from './components/SiteHeader';
 import 'semantic-ui-css/semantic.min.css'
-
 
 const theme = {
   global: {
@@ -18,7 +18,9 @@ const theme = {
 
 function App() {
   return (
-    <div></div>
+    <Grommet theme={theme}>
+      <SiteHeader></SiteHeader>
+    </Grommet>
   );
 }
 
