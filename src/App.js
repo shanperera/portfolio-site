@@ -1,7 +1,8 @@
 import React from "react";
 import { Grommet } from 'grommet';
 import SiteHeader from './components/SiteHeader';
-import 'semantic-ui-css/semantic.min.css'
+import Body from './components/Body';
+import Footer from './components/Footer'
 
 const theme = {
   global: {
@@ -28,6 +29,8 @@ function App() {
   return (
     <Grommet theme={theme}>
       <SiteHeader></SiteHeader>
+      <Body></Body>
+      <Footer></Footer>
     </Grommet>
   );
 }
