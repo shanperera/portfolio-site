@@ -14,6 +14,14 @@ const theme = {
       height: "24px",
     },
   },
+  anchor: {
+    hover: {
+      textDecoration: "none",
+      extend: {
+        color: '#8e59d4',
+      }
+    }
+  }
 };
 
 function App() {
