@@ -1,8 +1,8 @@
 import React from "react";
-import { Grommet } from 'grommet';
-import SiteHeader from './components/SiteHeader';
-import Body from './components/Body';
-import Footer from './components/Footer'
+import { Box, Grommet } from "grommet";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+import SiteHeader from "./components/SiteHeader";
 
 const theme = {
   global: {
@@ -19,20 +19,25 @@ const theme = {
     hover: {
       textDecoration: "none",
       extend: {
-        color: '#8e59d4',
-      }
-    }
+        color: "#8e59d4",
+      },
+    },
+  },
+  box: {
+    extend: "scroll-behavior: smooth;"
   }
 };
 
-function App() {
-  return (
-    <Grommet theme={theme}>
-      <SiteHeader></SiteHeader>
-      <Body></Body>
-      <Footer></Footer>
-    </Grommet>
-  );
-}
+ function App() {
+   return (
+     <Grommet theme={theme} full="true">
+       <Box fill="true">
+         <SiteHeader></SiteHeader>
+         <Body></Body>
+         <Footer></Footer>
+       </Box>
+     </Grommet>
+   );
+ }
 
 export default App;

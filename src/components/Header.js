@@ -12,6 +12,7 @@ class Header extends React.Component {
         pad={this.props.pad}
         elevation={this.props.elevation}
         border={this.props.border}
+        flex="false"
       >
           {this.props.children}
       </Box>
