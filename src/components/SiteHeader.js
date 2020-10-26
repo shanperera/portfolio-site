@@ -29,5 +29,4 @@ class SiteHeader extends React.Component {
   }
 }
 
-
 export default SiteHeader;

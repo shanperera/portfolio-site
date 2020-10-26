@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Grommet } from "grommet";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
+import Main from "./components/Main";
 import SiteHeader from "./components/SiteHeader";
+import TitleCard from "./components/TitleCard";
 
 const theme = {
   global: {
@@ -24,20 +24,21 @@ const theme = {
     },
   },
   box: {
-    extend: "scroll-behavior: smooth;"
-  }
+    extend: "scroll-behavior: smooth;",
+  },
 };
 
- function App() {
-   return (
-     <Grommet theme={theme} full="true">
-       <Box fill="true">
-         <SiteHeader></SiteHeader>
-         <Body></Body>
-         <Footer></Footer>
-       </Box>
-     </Grommet>
-   );
- }
+function App() {
+  return (
+    <Grommet theme={theme} full="true">
+      <Box fill="true">
+        <SiteHeader></SiteHeader>
+        <Main>
+          <TitleCard></TitleCard>
+        </Main>
+      </Box>
+    </Grommet>
+  );
+}
 
 export default App;

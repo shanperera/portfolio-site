@@ -1,17 +1,24 @@
 import React from "react";
 import { Anchor, Box } from "grommet";
+import Footer from './Footer'
+import styled from "styled-components";
 
-class Body extends React.Component {
+const StyledBox = styled(Box)`
+background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+`;
+
+class Main extends React.Component {
   render() {
     return (
       <Box
         animation={{ type: "fadeIn", duration: "2000" }}
         background="light-1"
-        pad={{ horizontal: "xlarge"}}
-        flex="true"
+        pad={{ bottom: "medium" }}
         overflow="auto"
       >
-          <Anchor href="#Home" name="Home"></Anchor>
+        <Anchor href="#Home" name="Home"></Anchor>
+        {this.props.children}
+        <StyledBox pad="large" flex="false">
           <h1>
             <Anchor href="#Work" name="Work"></Anchor>Work
           </h1>
@@ -67,7 +74,6 @@ class Body extends React.Component {
             euismod fringilla bibendum. Curabitur fringilla blandit velit,
             suscipit auctor tortor fringilla at.{" "}
           </p>
-
           <h1>
             <Anchor href="#Skills" name="Skills"></Anchor>Skills
           </h1>
@@ -140,10 +146,7 @@ class Body extends React.Component {
             conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet,
             consectetur adipiscing elit. Duis sit amet ante nisi.{" "}
           </p>
-          <p>
-            Morbi vel orci ullamcorper nunc semper mattis. Sed ut ante ac metus
-            rhoncus bibendum a sit amet neque. Cras viverra non augue a
-            bibendum. Mauris at urna felis. Vestibulum ante ipsum primis in
+          <p>Bodyum. Mauris at urna felis. Vestibulum ante ipsum primis in
             faucibus orci luctus et ultrices posuere cubilia curae; In pretium
             nec lorem id porta. Maecenas libero augue, faucibus commodo justo
             vitae, luctus sodales odio. Sed varius fermentum ipsum, quis mattis
@@ -179,9 +182,12 @@ class Body extends React.Component {
             euismod fringilla bibendum. Curabitur fringilla blandit velit,
             suscipit auctor tortor fringilla at.{" "}
           </p>
-        </Box>
+          </StyledBox>
+        <Footer></Footer>
+      </Box>
+      
     );
   }
 }
 
-export default Body;
+export default Main;
