@@ -52,7 +52,7 @@ class TitleCard extends React.Component {
               margin="small"
               color="white"
             >
-              Full Stack Developer,
+              Full Stack Developer
             </StyledText>
             <StyledText
               className="puff-in-center"
@@ -61,7 +61,7 @@ class TitleCard extends React.Component {
               margin="small"
               color="white"
             >
-              Hobbyist &
+              Hobbyist 
             </StyledText>
             <StyledText
               className="slide-in-blurred-right"
@@ -70,7 +70,7 @@ class TitleCard extends React.Component {
               margin="small"
               color="white"
             >
-              Huge Nerd
+              & Huge Nerd
             </StyledText>
           </Box>
           <Text margin="small" color="white">
