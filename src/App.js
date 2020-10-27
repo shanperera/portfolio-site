@@ -10,7 +10,7 @@ const theme = {
       brand: "#a770ef",
     },
     font: {
-      family: "Lato",
+      family: "Rajdhani",
       size: "18px",
       height: "24px",
     },

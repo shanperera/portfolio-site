@@ -1,5 +1,5 @@
 import React from "react";
-import { Anchor, Box, Sidebar } from "grommet";
+import { Anchor, Box } from "grommet";
 import Header from "./Header";
 import styled from "styled-components";
 

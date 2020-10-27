@@ -1,9 +1,11 @@
 import React from "react";
-import { Box, Card, CardBody, CardHeader, Image, Text } from "grommet";
+import { Box, Card, CardBody, CardHeader, Text, Image } from "grommet";
 import styled from "styled-components";
+import "../styles/animista.css";
+import AvatarImg from "../res/FlatCharacterAvatarWeb.svg";
 
 const StyledBackground = styled(Box)`
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 `;
 
 const StyledCard = styled(Card)`
@@ -15,6 +17,11 @@ const StyledCard = styled(Card)`
   );
 `;
 
+const StyledText = styled(Text)`
+  font-family: Bebas Neue;
+  font-size: 3em;
+`;
+
 class TitleCard extends React.Component {
   render() {
     return (
@@ -24,79 +31,20 @@ class TitleCard extends React.Component {
         align="center"
         flex="false"
       >
-        <Card
-          pad="xlarge"
-          height="large"
-          align="center"
-          width="100%"
-          round="xsmall"
-        >
-          <Text color="white" size="xxlarge">
-            Shan Perera
-          </Text>
-          <Box
-            fill="horizontal"
-            pad="large"
-            justify="between"
-            gap="large"
-            direction="row-responsive"
-          >
-            <Box>
-              <StyledCard
-                align="center"
-                elevation="none"
-                round="small"
-                width="medium"
-                height="small"
-              >
-                <CardHeader
-                  pad="small"
-                  justify="center"
-                  fill="horizontal"
-                  border={{ side: "bottom", size: "xsmall", color: "#7873f5" }}
-                >
-                  Hobbyist
-                </CardHeader>
-              </StyledCard>
-            </Box>
-            <Box>
-              <StyledCard
-                align="center"
-                elevation="none"
-                round="small"
-                width="medium"
-                height="small"
-              >
-                <CardHeader
-                  pad="small"
-                  justify="center"
-                  fill="horizontal"
-                  border={{ side: "bottom", size: "xsmall", color: "#7873f5" }}
-                >
-                  Developer
-                </CardHeader>
-              </StyledCard>
-            </Box>
-            <Box>
-              <StyledCard
-                align="center"
-                elevation="none"
-                round="small"
-                width="medium"
-                height="small"
-              >
-                <CardHeader
-                  pad="small"
-                  justify="center"
-                  fill="horizontal"
-                  border={{ side: "bottom", size: "xsmall", color: "#7873f5" }}
-                >
-                  Nerd
-                </CardHeader>
-              </StyledCard>
-            </Box>
+        <Box pad="small" align="center" width="100%">
+          <Box height="small" width="small">
+          <Image fit="cover" src={AvatarImg} />
           </Box>
-        </Card>
+          <StyledText pad="small" size="xxlarge" margin="small" color="white">
+            Full Stack Developer, Hobbyist & Huge Nerd
+          </StyledText>
+          <Text margin="small" color="white">
+            I write concise, clean code for work and in my spare time and love
+            every minute of it.
+          </Text>
+          
+        </Box>
+        
       </StyledBackground>
     );
   }

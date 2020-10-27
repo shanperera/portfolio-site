@@ -3,6 +3,7 @@ import { Anchor, Box } from "grommet";
 import Footer from './Footer'
 import styled from "styled-components";
 
+
 const StyledBox = styled(Box)`
 background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
 `;
