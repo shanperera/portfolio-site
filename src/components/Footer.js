@@ -7,7 +7,7 @@ class Footer extends React.Component {
     return (
       <Box pad="small" background="dark-1" height="xxsmall" flex="false">
         <Box justify="between" direction="row-responsive">
-          <Text size="small">Copyright © 2020 Shan Perera</Text>
+          <Text size="small">Copyright © {getCurrentYear()} Shan Perera</Text>
           
           <Text size="small">
             Created with <Favorite size="small" color="red" /> by Shan Perera:{" "}
@@ -26,4 +26,9 @@ class Footer extends React.Component {
     );
   }
 }
+
+function getCurrentYear(){
+  return new Date().getFullYear();
+}
+
 export default Footer;

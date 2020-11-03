@@ -43,7 +43,7 @@ class TitleCard extends React.Component {
               margin="small"
               color="black"
             >
-              Full Stack Developer
+              Full Stack Developer,
             </StyledText>
             <StyledText
               className="puff-in-center"
@@ -64,7 +64,7 @@ class TitleCard extends React.Component {
               & Huge Nerd
             </StyledText>
           </Box>
-          <Text margin="small" color="#152238">
+          <Text margin="small" color="#1c2e4a">
             I write concise, clean code for work and in my spare time and love
             every minute of it.
           </Text>
