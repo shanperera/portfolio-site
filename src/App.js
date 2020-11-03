@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import SiteHeader from "./components/SiteHeader";
 import TitleCard from "./components/TitleCard";
 import Introduction from "./components/Introduction";
+import Skills from "./components/Skills";
 
 const theme = {
   global: {
@@ -47,6 +48,7 @@ function App() {
         <Main>
           <TitleCard></TitleCard>
           <Introduction></Introduction>
+          <Skills></Skills>
         </Main>
       </Box>
     </Grommet>

@@ -5,12 +5,12 @@ import "../styles/animista.css";
 import AvatarImg from "../res/FlatCharacterAvatarWeb.svg";
 
 const StyledBackground = styled(Box)`
-background: #FFFFFF;
+  background: #ffffff;
 `;
 
 const StyledText = styled(Text)`
   font-family: Bebas Neue;
-  color: #152238
+  color: #152238;
 `;
 
 class TitleCard extends React.Component {
@@ -30,39 +30,14 @@ class TitleCard extends React.Component {
               src={AvatarImg}
             />
           </Box>
-          <Box
-            direction="row-responsive"
-            align="center"
-            justify="center"
-            width="100%"
-          >
-            <StyledText
-              className="slide-in-blurred-left"
-              pad="small"
-              size="xxlarge"
-              margin="small"
-              color="black"
-            >
+          <Box direction="row-responsive" align="center" justify="center">
+            <HeaderText className="slide-in-blurred-left">
               Full Stack Developer,
-            </StyledText>
-            <StyledText
-              className="puff-in-center"
-              pad="small"
-              size="xxlarge"
-              margin="small"
-              color="white"
-            >
-              Hobbyist 
-            </StyledText>
-            <StyledText
-              className="slide-in-blurred-right"
-              pad="small"
-              size="xxlarge"
-              margin="small"
-              color="white"
-            >
+            </HeaderText>
+            <HeaderText className="puff-in-center">Hobbyist</HeaderText>
+            <HeaderText className="slide-in-blurred-right">
               & Huge Nerd
-            </StyledText>
+            </HeaderText>
           </Box>
           <Text margin="small" color="#1c2e4a">
             I write concise, clean code for work and in my spare time and love
@@ -72,6 +47,19 @@ class TitleCard extends React.Component {
       </StyledBackground>
     );
   }
+}
+
+function HeaderText(props) {
+  return (
+    <StyledText
+      className={props.className}
+      pad="small"
+      size="xxlarge"
+      margin="small"
+    >
+      {props.children}
+    </StyledText>
+  );
 }
 
 export default TitleCard;

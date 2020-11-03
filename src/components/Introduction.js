@@ -17,7 +17,7 @@ class Introduction extends React.Component {
           pad={{ horizontal: "xlarge", vertical: "small" }}
         >
           <Box pad={{ top: "large", horizontal: "large", bottom: "medium" }}>
-            <Text color="white" size="xlarge">
+            <Text weight="bold" color="white" size="xlarge">
               Hello, I'm Shan.{" "}
             </Text>
           </Box>
