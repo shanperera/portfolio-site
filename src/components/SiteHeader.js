@@ -16,7 +16,7 @@ class SiteHeader extends React.Component {
         border={{ color: "light-3", size: "xsmall", side: "bottom" }}
       >
         <Box animation={{ type: "fadeIn", delay: "1000", duration: "2000" }}>
-          <StyledAnchor href="/" size="xxlarge" label="SP" />
+          <StyledAnchor href="/" size="xlarge" label="SP" />
         </Box>
         <Box direction="row-responsive" gap="medium">
           <Anchor href="#Home" label="Home" />

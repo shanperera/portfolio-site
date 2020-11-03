@@ -3,6 +3,7 @@ import { Box, Grommet } from "grommet";
 import Main from "./components/Main";
 import SiteHeader from "./components/SiteHeader";
 import TitleCard from "./components/TitleCard";
+import Introduction from "./components/Introduction";
 
 const theme = {
   global: {
@@ -26,6 +27,16 @@ const theme = {
   box: {
     extend: "scroll-behavior: smooth;",
   },
+  text: {
+    xlarge: {
+      size: "2em",
+      height: "1em"
+    },
+    xxlarge: {
+      "size": "3em",
+      "height": "0.75em",
+    }
+  }
 };
 
 function App() {
@@ -35,6 +46,7 @@ function App() {
         <SiteHeader></SiteHeader>
         <Main>
           <TitleCard></TitleCard>
+          <Introduction></Introduction>
         </Main>
       </Box>
     </Grommet>

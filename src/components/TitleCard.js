@@ -5,12 +5,12 @@ import "../styles/animista.css";
 import AvatarImg from "../res/FlatCharacterAvatarWeb.svg";
 
 const StyledBackground = styled(Box)`
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background: #FFFFFF;
 `;
 
 const StyledText = styled(Text)`
   font-family: Bebas Neue;
-  font-size: 3em;
+  color: #152238
 `;
 
 class TitleCard extends React.Component {
@@ -41,7 +41,7 @@ class TitleCard extends React.Component {
               pad="small"
               size="xxlarge"
               margin="small"
-              color="white"
+              color="black"
             >
               Full Stack Developer
             </StyledText>
@@ -64,7 +64,7 @@ class TitleCard extends React.Component {
               & Huge Nerd
             </StyledText>
           </Box>
-          <Text margin="small" color="white">
+          <Text margin="small" color="#152238">
             I write concise, clean code for work and in my spare time and love
             every minute of it.
           </Text>
