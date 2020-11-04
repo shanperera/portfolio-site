@@ -22,8 +22,8 @@ class SiteHeader extends React.Component {
         </Box>
         <Box direction="row-responsive" gap="medium">
           <Anchor href="#Home" label="Home" />
-          <Anchor href="#Work" label="Work" />
           <Anchor href="#Skills" label="Skills" />
+          <Anchor href="#Work" label="Work" />
           <Anchor href="#About" label="About" />
         </Box>
       </Box>
