@@ -3,36 +3,33 @@ import { Box, Card as GrommetCard, Text } from "grommet";
 import { Code, Deploy, Reactjs, Next } from "grommet-icons";
 import styled from "styled-components";
 
-const StyledBox = styled(Box)`
-  background: #7d4cdb;
-`;
 
 class Skills extends React.Component {
   render() {
     return (
       <Box flex="false">
-        <StyledBox justify="center" align="center" direction="row-responsive">
+        <Box background="brand" justify="center" align="center" direction="row-responsive">
           <CardBox isHeader={true}>
             <Card isTopRounded={true}>
               <Code color="brand" size="large"/>
-              <Text color="dark-2" size="large">
+              <Text color="dark-2" weight="bold" size="large">
                 Java
               </Text>
             </Card>
             <Card isTopRounded={true}>
               <Reactjs color="brand" size="large"/>
-              <Text color="dark-2" size="large">
+              <Text color="dark-2" weight="bold" size="large">
                 React
               </Text>
             </Card>
             <Card isTopRounded={true}>
               <Deploy color="brand" size="large"/>
-              <Text color="dark-2" size="large">
+              <Text color="dark-2" weight="bold" size="large">
                 Projects
               </Text>
             </Card>
           </CardBox>
-        </StyledBox>
+        </Box>
         <Box justify="center" align="center" direction="row-responsive">
           <CardBox isHeader={false}>
             <Card isTopRounded={false}>

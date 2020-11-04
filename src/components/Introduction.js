@@ -2,14 +2,11 @@ import React from "react";
 import { Anchor, Box, Text } from "grommet";
 import styled from "styled-components";
 
-const StyledBox = styled(Box)`
-  background: #7d4cdb;
-`;
 
 class Introduction extends React.Component {
   render() {
     return (
-      <StyledBox flex="false" direction="row-responsive">
+      <Box background="brand" flex="false" direction="row-responsive">
         <Anchor href="#Skills" name="Skills"></Anchor>
         <Box
           align="center"
@@ -36,7 +33,7 @@ class Introduction extends React.Component {
             </Text>
           </Box>
         </Box>
-      </StyledBox>
+      </Box>
     );
   }
 }

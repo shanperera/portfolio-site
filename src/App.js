@@ -11,7 +11,8 @@ import Footer from './components/Footer'
 const theme = {
   global: {
     colors: {
-      brand: "#a770ef",
+      titleText: "#152238",
+      accentText: "#1c2e4a"
     },
     font: {
       family: "Rajdhani",
