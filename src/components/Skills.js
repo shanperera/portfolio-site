@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Card as GrommetCard, Text } from "grommet";
 import { Code, Deploy, Reactjs, Next } from "grommet-icons";
-import styled from "styled-components";
-
 
 class Skills extends React.Component {
   render() {
@@ -40,6 +38,10 @@ class Skills extends React.Component {
                 <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
                 <ListItem>Vestibulum auctor dapibus neque.</ListItem>
                 <ListItem>Nunc dignissim risus id metus.</ListItem>
+                <ListItem>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </ListItem>
+                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
               </List>
             </Card>
             <Card isTopRounded={false}>
@@ -50,6 +52,10 @@ class Skills extends React.Component {
                 <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
                 <ListItem>Vestibulum auctor dapibus neque.</ListItem>
                 <ListItem>Nunc dignissim risus id metus.</ListItem>
+                <ListItem>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </ListItem>
+                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
               </List>
             </Card>
             <Card isTopRounded={false}>
@@ -60,6 +66,10 @@ class Skills extends React.Component {
                 <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
                 <ListItem>Vestibulum auctor dapibus neque.</ListItem>
                 <ListItem>Nunc dignissim risus id metus.</ListItem>
+                <ListItem>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </ListItem>
+                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
               </List>
             </Card>
           </CardBox>
