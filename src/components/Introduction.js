@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text } from "grommet";
+import { Anchor, Box, Text } from "grommet";
 import styled from "styled-components";
 
 const StyledBox = styled(Box)`
@@ -10,6 +10,7 @@ class Introduction extends React.Component {
   render() {
     return (
       <StyledBox flex="false" direction="row-responsive">
+        <Anchor href="#Skills" name="Skills"></Anchor>
         <Box
           align="center"
           justify="center"

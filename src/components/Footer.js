@@ -5,7 +5,7 @@ import { Favorite, Grommet, Node, Reactjs } from "grommet-icons";
 class Footer extends React.Component {
   render() {
     return (
-      <Box pad="small" background="dark-1" height="xxsmall" flex="false">
+      <Box pad="small" background="#152238" height="xxsmall" flex="false">
         <Box justify="between" direction="row-responsive">
           <Text size="small">Copyright © {getCurrentYear()} Shan Perera</Text>
           

@@ -1,6 +1,6 @@
 import React from "react";
-import { Anchor, Box, Card as GrommetCard, Text } from "grommet";
-import { Code, Reactjs, Java } from "grommet-icons";
+import { Box, Card as GrommetCard, Text } from "grommet";
+import { Code, Deploy, Reactjs, Next } from "grommet-icons";
 import styled from "styled-components";
 
 const StyledBox = styled(Box)`
@@ -11,23 +11,22 @@ class Skills extends React.Component {
   render() {
     return (
       <Box flex="false">
-        <Anchor href="#Skills" name="Skills"></Anchor>
         <StyledBox justify="center" align="center" direction="row-responsive">
           <CardBox isHeader={true}>
             <Card isTopRounded={true}>
-              <Java color="brand" size="large"></Java>
+              <Code color="brand" size="large"/>
               <Text color="dark-2" size="large">
                 Java
               </Text>
             </Card>
             <Card isTopRounded={true}>
-              <Reactjs color="brand" size="large"></Reactjs>
+              <Reactjs color="brand" size="large"/>
               <Text color="dark-2" size="large">
                 React
               </Text>
             </Card>
             <Card isTopRounded={true}>
-              <Code color="brand" size="large"></Code>
+              <Deploy color="brand" size="large"/>
               <Text color="dark-2" size="large">
                 Projects
               </Text>
@@ -37,40 +36,63 @@ class Skills extends React.Component {
         <Box justify="center" align="center" direction="row-responsive">
           <CardBox isHeader={false}>
             <Card isTopRounded={false}>
-              <ul>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                </li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-                <li>Vestibulum auctor dapibus neque.</li>
-                <li>Nunc dignissim risus id metus.</li>
-              </ul>
+            <List>
+                <ListItem>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </ListItem>
+                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
+                <ListItem>Vestibulum auctor dapibus neque.</ListItem>
+                <ListItem>Nunc dignissim risus id metus.</ListItem>
+              </List>
             </Card>
             <Card isTopRounded={false}>
-              <ul>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                </li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-                <li>Vestibulum auctor dapibus neque.</li>
-                <li>Nunc dignissim risus id metus.</li>
-              </ul>
+              <List>
+                <ListItem>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </ListItem>
+                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
+                <ListItem>Vestibulum auctor dapibus neque.</ListItem>
+                <ListItem>Nunc dignissim risus id metus.</ListItem>
+              </List>
             </Card>
             <Card isTopRounded={false}>
-              <ul>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                </li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-                <li>Vestibulum auctor dapibus neque.</li>
-                <li>Nunc dignissim risus id metus.</li>
-              </ul>
+            <List>
+                <ListItem>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </ListItem>
+                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
+                <ListItem>Vestibulum auctor dapibus neque.</ListItem>
+                <ListItem>Nunc dignissim risus id metus.</ListItem>
+              </List>
             </Card>
           </CardBox>
         </Box>
       </Box>
     );
   }
+}
+
+function List(props) {
+  return (
+    <Box pad="small" direction="column" gap="xsmall">
+      {props.children}
+    </Box>
+  );
+}
+
+function ListItem(props) {
+  return (
+    <Box direction="row-responsive" align="center" overflow="auto">
+      <Text size="medium" pad="small">
+        <Box direction="row-responsive">
+          <Box pad="xsmall">
+            <Next color="brand" size="small" />
+          </Box>
+          {props.children}
+        </Box>
+      </Text>
+    </Box>
+  );
 }
 
 function Card(props) {
@@ -94,6 +116,7 @@ function Card(props) {
   }
 
   return (
+    <Box border="small" border={{ color: "light-4",size: "xsmall", side: "bottom"}} round={{ size: "small", corner: "bottom" }}>
     <GrommetCard
       align="center"
       justify="center"
@@ -103,9 +126,11 @@ function Card(props) {
       background="light-2"
       width="medium"
       round={{ size: "small", corner: "bottom" }}
+      border={{ color: "light-4",size: "xsmall", side: "vertical"}}
     >
       {props.children}
     </GrommetCard>
+    </Box>
   );
 }
 

@@ -5,6 +5,8 @@ import SiteHeader from "./components/SiteHeader";
 import TitleCard from "./components/TitleCard";
 import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
+import Work from "./components/Work"
+import Footer from './components/Footer'
 
 const theme = {
   global: {
@@ -31,13 +33,13 @@ const theme = {
   text: {
     xlarge: {
       size: "2em",
-      height: "1em"
+      height: "1em",
     },
     xxlarge: {
-      "size": "3em",
-      "height": "0.75em",
-    }
-  }
+      size: "3em",
+      height: "0.75em",
+    },
+  },
 };
 
 function App() {
@@ -49,6 +51,8 @@ function App() {
           <TitleCard></TitleCard>
           <Introduction></Introduction>
           <Skills></Skills>
+          <Work></Work>
+          <Footer></Footer>
         </Main>
       </Box>
     </Grommet>
