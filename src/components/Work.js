@@ -38,6 +38,22 @@ class Work extends React.Component {
           pad={{ horizontal: "xlarge", vertical: "small" }}
         >
           <ExperienceEntry
+            date="Current"
+            title="Open to new opportunities"
+            position="Full Stack Developer"
+            technologies={[ "Java", "React", "Node", "Practically Anything"]}
+          >
+            <Box direction="row-responsive" gap="small">
+              <Text>
+                Are you looking for a new member to join your team? If you're in
+                need of a hard working yet easy going full stack developer who
+                can learn new technologies with speedy efficiency and is very quick on their
+                feet:
+                <Anchor href="#" label=" Contact Me." />
+              </Text>
+            </Box>
+          </ExperienceEntry>
+          <ExperienceEntry
             date="June 2019 - April 2020"
             title="BMO Financial Group"
             position="Junior Developer"
@@ -82,7 +98,7 @@ class Work extends React.Component {
               "UNIX",
               "SQL",
               "Code Security",
-              "Design Patterns"
+              "Design Patterns",
             ]}
           >
             <ListItem>
@@ -94,7 +110,7 @@ class Work extends React.Component {
               platforms and skills
             </ListItem>
             <ListItem>
-              Collaborated with other trainees to offer assistance in learning
+              Mentored other trainees and offered assistance in learning
               new skills and improving overall training experience
             </ListItem>
           </ExperienceEntry>
