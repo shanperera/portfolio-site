@@ -92,7 +92,7 @@ function List(props) {
   );
 }
 
-function ListItem(props) {
+export function ListItem(props) {
   return (
     <Box direction="row-responsive" align="center" overflow="auto">
       <Text size="medium" pad="small">

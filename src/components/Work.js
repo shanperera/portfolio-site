@@ -1,6 +1,7 @@
 import React from "react";
 import { Anchor, Box, Card, Text } from "grommet";
 import { CaretNext } from "grommet-icons";
+import { ListItem } from "./Skills";
 import styled from "styled-components";
 
 const TitleText = styled(Text)`
@@ -37,38 +38,65 @@ class Work extends React.Component {
           pad={{ horizontal: "xlarge", vertical: "small" }}
         >
           <ExperienceEntry
-            date="Nov 2011 - June 2016"
-            title="Nice Workplace"
-            position="Full Stack Developer"
-            technologies={["ReactJS", "Java", "Ruby on Rails"]}
+            date="June 2019 - April 2020"
+            title="BMO Financial Group"
+            position="Junior Developer"
+            technologies={[
+              "Elasticsearch",
+              "Filebeat",
+              "Java",
+              "Python",
+              "Ruby",
+              "YAML",
+            ]}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <ListItem>
+              Collaborated within a small team to maintain ELK (Elastic)
+              platform for entire BMO organization.
+            </ListItem>
+            <ListItem>
+              Connected with project teams to assess relevant platform use cases
+              and onboard projects on to platform.
+            </ListItem>
+            <ListItem>
+              Ensured platform and data ingestion pipeline long term stability.
+            </ListItem>
+            <ListItem>
+              Provide support for unexpected platform issues and minimize
+              business impact to customers and stakeholders.
+            </ListItem>
+            <ListItem>
+              Create scripts to automate tasks in onboarding process.
+            </ListItem>
           </ExperienceEntry>
           <ExperienceEntry
-            date="Nov 2011 - June 2016"
-            title="Cool Workplace"
-            position="Junior Developer"
+            date="February 2019 - June 2020"
+            title="FDM Group"
+            position="Consultant"
+            technologies={[
+              "Java",
+              "Docker",
+              "Selenium",
+              "JUnit",
+              "Mockito",
+              "UNIX",
+              "SQL",
+              "Code Security",
+              "Design Patterns"
+            ]}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            <ListItem>
+              Attended technical training courses in multiple fields involving
+              computer science.
+            </ListItem>
+            <ListItem>
+              Completed all training courses with distinction for numerous
+              platforms and skills
+            </ListItem>
+            <ListItem>
+              Collaborated with other trainees to offer assistance in learning
+              new skills and improving overall training experience
+            </ListItem>
           </ExperienceEntry>
         </Box>
       </Box>
@@ -83,7 +111,7 @@ function TechnologyEntry(props) {
   if (stack != null) {
     techStack = stack.map((i) => <TechnologyCard>{i}</TechnologyCard>);
     return (
-      <Box margin={{ top: "small", bottom: "small"}}>
+      <Box margin={{ top: "small", bottom: "small" }}>
         <PositionText fill="horizontal" size="small">
           Stack:
         </PositionText>
@@ -99,7 +127,7 @@ function TechnologyEntry(props) {
 
 function TechnologyCard(props) {
   return (
-    <Card background="brand" pad="small" elevation="xsmall">
+    <Card background="brand" pad="xsmall" elevation="xsmall">
       {props.children}
     </Card>
   );
@@ -121,7 +149,7 @@ function ExperienceEntry(props) {
         <CaretNext size="small" color="brand" />
       </Box>
       <Box
-        margin={{ top: "small", left: "medium"}}
+        margin={{ top: "small", left: "medium" }}
         border={{ side: "bottom", size: "xsmall" }}
         pad="small"
         fill
