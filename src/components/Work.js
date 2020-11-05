@@ -158,15 +158,15 @@ function ExperienceEntry(props) {
         align="center"
         justify="center"
         pad="small"
-        border={{ size: "xsmall", side: "right" }}
+        border={{ size: "xsmall", side: "right", color: "light-6"}}
         width="medium"
       >
-        <Text weight="bold">{props.date}</Text>
+        <Text weight="bold" color="accentText">{props.date}</Text>
         <CaretNext size="small" color="brand" />
       </Box>
       <Box
         margin={{ top: "small", left: "medium" }}
-        border={{ side: "bottom", size: "xsmall" }}
+        border={{ side: "bottom", size: "xsmall", color: "light-6" }}
         pad="small"
         fill
       >
