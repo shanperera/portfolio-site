@@ -6,22 +6,27 @@ class Skills extends React.Component {
   render() {
     return (
       <Box flex="false">
-        <Box background="brand" justify="center" align="center" direction="row-responsive">
+        <Box
+          background="brand"
+          justify="center"
+          align="center"
+          direction="row-responsive"
+        >
           <CardBox isHeader={true}>
             <Card isTopRounded={true}>
-              <Code color="brand" size="large"/>
+              <Code color="brand" size="large" />
               <Text color="dark-2" weight="bold" size="large">
                 Java
               </Text>
             </Card>
             <Card isTopRounded={true}>
-              <Reactjs color="brand" size="large"/>
+              <Reactjs color="brand" size="large" />
               <Text color="dark-2" weight="bold" size="large">
                 React
               </Text>
             </Card>
             <Card isTopRounded={true}>
-              <Deploy color="brand" size="large"/>
+              <Deploy color="brand" size="large" />
               <Text color="dark-2" weight="bold" size="large">
                 Projects
               </Text>
@@ -31,15 +36,15 @@ class Skills extends React.Component {
         <Box justify="center" align="center" direction="row-responsive">
           <CardBox isHeader={false}>
             <Card isTopRounded={false}>
-            <List>
+              <List>
                 <ListItem>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
                 <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
                 <ListItem>Vestibulum auctor dapibus neque.</ListItem>
                 <ListItem>Nunc dignissim risus id metus.</ListItem>
                 <ListItem>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
                 <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
               </List>
@@ -47,27 +52,27 @@ class Skills extends React.Component {
             <Card isTopRounded={false}>
               <List>
                 <ListItem>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
                 <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
                 <ListItem>Vestibulum auctor dapibus neque.</ListItem>
                 <ListItem>Nunc dignissim risus id metus.</ListItem>
                 <ListItem>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
                 <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
               </List>
             </Card>
             <Card isTopRounded={false}>
-            <List>
+              <List>
                 <ListItem>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
                 <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
                 <ListItem>Vestibulum auctor dapibus neque.</ListItem>
                 <ListItem>Nunc dignissim risus id metus.</ListItem>
                 <ListItem>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
                 <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
               </List>
@@ -123,20 +128,23 @@ function Card(props) {
   }
 
   return (
-    <Box border="small" border={{ color: "light-4",size: "xsmall", side: "bottom"}} round={{ size: "small", corner: "bottom" }}>
-    <GrommetCard
-      align="center"
-      justify="center"
-      gap="small"
-      elevation="none"
-      pad="small"
-      background="light-2"
-      width="medium"
+    <Box
+      border={{ color: "light-4", size: "xsmall", side: "bottom" }}
       round={{ size: "small", corner: "bottom" }}
-      border={{ color: "light-4",size: "xsmall", side: "vertical"}}
     >
-      {props.children}
-    </GrommetCard>
+      <GrommetCard
+        align="center"
+        justify="center"
+        gap="small"
+        elevation="none"
+        pad="small"
+        background="light-2"
+        width="medium"
+        round={{ size: "small", corner: "bottom" }}
+        border={{ color: "light-4", size: "xsmall", side: "vertical" }}
+      >
+        {props.children}
+      </GrommetCard>
     </Box>
   );
 }

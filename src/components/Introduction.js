@@ -1,6 +1,5 @@
 import React from "react";
 import { Anchor, Box, Text } from "grommet";
-import styled from "styled-components";
 
 
 class Introduction extends React.Component {
