@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Card as GrommetCard, Text } from "grommet";
-import { Code, Deploy, Reactjs, Next } from "grommet-icons";
+import { Code, Deploy, Reactjs } from "grommet-icons";
+import { ListItem } from "./ListItem"
 
 class Skills extends React.Component {
   render() {
@@ -88,21 +89,6 @@ function List(props) {
   return (
     <Box pad="small" direction="column" gap="xsmall">
       {props.children}
-    </Box>
-  );
-}
-
-export function ListItem(props) {
-  return (
-    <Box direction="row-responsive" align="center" overflow="auto">
-      <Text size="medium" pad="small">
-        <Box direction="row-responsive">
-          <Box pad="xsmall">
-            <Next color="brand" size="small" />
-          </Box>
-          {props.children}
-        </Box>
-      </Text>
     </Box>
   );
 }

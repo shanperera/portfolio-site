@@ -5,8 +5,9 @@ import SiteHeader from "./components/SiteHeader";
 import TitleCard from "./components/TitleCard";
 import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
-import Work from "./components/Work"
-import Footer from './components/Footer'
+import Work from "./components/Work";
+import Projects from "./components/Projects";
+import Footer from './components/Footer';
 
 const theme = {
   global: {
@@ -53,6 +54,7 @@ function App() {
           <Introduction></Introduction>
           <Skills></Skills>
           <Work></Work>
+          <Projects></Projects>
           <Footer></Footer>
         </Main>
       </Box>
