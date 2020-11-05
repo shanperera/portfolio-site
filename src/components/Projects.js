@@ -1,20 +1,20 @@
 import React from "react";
-import { Anchor, Box, Text } from "grommet";
 import { BodyItem } from "./BodyItem";
+import { TimelineEntry } from "./TimelineEntry";
 
-class Projects extends React.Component {
+class About extends React.Component {
   render() {
     return (
       <BodyItem
+        background="brand"
         title="Personal Projects"
-        titleTextColor="titleText"
-        anchorHref="#About"
-        anchorName="About"
+        anchorHref="#Projects"
+        anchorName="Projects"
       >
-        TEST TEXT
+        HELLUR
       </BodyItem>
     );
   }
 }
 
-export default Projects;
+export default About;

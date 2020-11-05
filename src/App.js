@@ -6,7 +6,7 @@ import TitleCard from "./components/TitleCard";
 import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects"
 import Footer from './components/Footer';
 
 const theme = {

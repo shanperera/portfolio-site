@@ -24,7 +24,7 @@ class SiteHeader extends React.Component {
           <Anchor href="#Home" label="Home" />
           <Anchor href="#Skills" label="Skills" />
           <Anchor href="#Work" label="Work" />
-          <Anchor href="#About" label="About" />
+          <Anchor href="#Projects" label="Projects" />
         </Box>
       </Box>
     );

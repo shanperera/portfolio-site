@@ -1,7 +1,7 @@
 import React from "react";
 import { Anchor, Box, Text } from "grommet";
 import { TimelineEntry } from "./TimelineEntry";
-import { ListItem } from "./ListItem";
+import { ListItem } from "./Lists";
 import { BodyItem } from "./BodyItem";
 
 class Work extends React.Component {
