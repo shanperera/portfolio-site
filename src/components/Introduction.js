@@ -1,5 +1,5 @@
 import React from "react";
-import { Anchor, Box, Text } from "grommet";
+import { Text } from "grommet";
 import { BodyItem } from "./BodyItem";
 
 class Introduction extends React.Component {

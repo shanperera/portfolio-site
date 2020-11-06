@@ -15,10 +15,9 @@ class Footer extends React.Component {
               <Anchor
                 pad={{ right: "small" }}
                 href="https://github.com/shanperera/portfolio-site"
-                label="Shan Perera"
+                label="Me."
                 target="_new"
               />
-              .
             </Text>
             <Text margin={{ right: "xsmall" }}>
               <Anchor href="https://reactjs.org/">

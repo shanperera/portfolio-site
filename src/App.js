@@ -6,20 +6,22 @@ import TitleCard from "./components/TitleCard";
 import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-import Projects from "./components/Projects"
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Footer from './components/Footer';
 
 const theme = {
   global: {
     colors: {
       titleText: "#152238",
-      accentText: "#1c2e4a"
+      accentText: "#1c2e4a",
+      hover: "#6FFFB0"
     },
     font: {
       family: "Rajdhani",
       size: "18px",
       height: "24px",
-    },
+    }
   },
   anchor: {
     hover: {
@@ -55,6 +57,7 @@ function App() {
           <Skills></Skills>
           <Work></Work>
           <Projects></Projects>
+          <Contact></Contact>
           <Footer></Footer>
         </Main>
       </Box>

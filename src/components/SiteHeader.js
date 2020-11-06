@@ -21,10 +21,11 @@ class SiteHeader extends React.Component {
           <StyledAnchor href="/" size="xlarge" label="SP" />
         </Box>
         <Box direction="row-responsive" gap="medium">
-          <Anchor href="#Home" label="Home" />
-          <Anchor href="#Skills" label="Skills" />
-          <Anchor href="#Work" label="Work" />
-          <Anchor href="#Projects" label="Projects" />
+          <Anchor className="jello-horizontal" href="#Home" label="Home" />
+          <Anchor className="jello-horizontal" href="#Skills" label="Skills" />
+          <Anchor className="jello-horizontal" href="#Work" label="Work" />
+          <Anchor className="jello-horizontal" href="#Projects" label="Projects" />
+          <Anchor className="jello-horizontal" href="#Contact" label="Contact" />
         </Box>
       </Box>
     );
