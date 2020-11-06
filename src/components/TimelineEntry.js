@@ -23,10 +23,10 @@ export function TimelineEntry(props) {
         border={{ size: "xsmall", side: "right", color: "light-6" }}
         width="medium"
       >
-        <Text weight="bold" color="accentText">
+        <Text weight="bold" color={props.dateTextColor}>
           {props.date}
         </Text>
-        <CaretNext size="small" color="brand" />
+        <CaretNext size="small" color={props.imageColor} />
       </Box>
       <Box
         margin={{ top: "small", left: "medium" }}
@@ -34,29 +34,29 @@ export function TimelineEntry(props) {
         pad="small"
         fill
       >
-        <TitleText color="titleText" size="large">
+        <TitleText color={props.titleTextColor} size="large">
           {props.title}
         </TitleText>
         <PositionText
-          color="accentText"
+          color={props.positionTextColor}
           margin={{ bottom: "small" }}
           size="medium"
         >
           {props.position}
         </PositionText>
         {props.children}
-        <TechnologyEntry technologies={props.technologies} />
+        <TechnologyEntry technologies={props.technologies} stackColor={props.stackColor}/>
       </Box>
     </Box>
   );
 }
 
-function TechnologyEntry(props) {
+export function TechnologyEntry(props) {
   const stack = props.technologies;
   let techStack;
 
   if (stack != null) {
-    techStack = stack.map((i) => <TechnologyCard>{i}</TechnologyCard>);
+    techStack = stack.map((i) => <TechnologyCard stackColor={props.stackColor}>{i}</TechnologyCard>);
     return (
       <Box margin={{ top: "small", bottom: "small" }}>
         <PositionText fill="horizontal" size="small">
@@ -74,7 +74,7 @@ function TechnologyEntry(props) {
 
 function TechnologyCard(props) {
   return (
-    <Card background="brand" pad="xsmall" elevation="xsmall">
+    <Card background={props.stackColor} pad="xsmall" elevation="xsmall">
       {props.children}
     </Card>
   );

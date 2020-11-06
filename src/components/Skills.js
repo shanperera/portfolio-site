@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Text } from "grommet";
 import { Code, Deploy, Reactjs } from "grommet-icons";
-import { ListContainer, ListItem } from "./Lists"
+import { ListContainer, ListItem } from "./Lists";
 import { Card, CardContainer, CardHeader } from "./Card";
 
 class Skills extends React.Component {
@@ -39,44 +39,44 @@ class Skills extends React.Component {
           <CardContainer>
             <Card>
               <ListContainer>
-                <ListItem>
+                <ListItem imageColor="brand">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
-                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
-                <ListItem>Vestibulum auctor dapibus neque.</ListItem>
-                <ListItem>Nunc dignissim risus id metus.</ListItem>
-                <ListItem>
+                <ListItem imageColor="brand">Aliquam tincidunt mauris eu risus.</ListItem>
+                <ListItem imageColor="brand">Vestibulum auctor dapibus neque.</ListItem>
+                <ListItem imageColor="brand">Nunc dignissim risus id metus.</ListItem>
+                <ListItem imageColor="brand">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
-                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
+                <ListItem imageColor="brand">Aliquam tincidunt mauris eu risus.</ListItem>
               </ListContainer>
             </Card>
             <Card>
               <ListContainer>
-                <ListItem>
+                <ListItem imageColor="brand">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
-                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
-                <ListItem>Vestibulum auctor dapibus neque.</ListItem>
-                <ListItem>Nunc dignissim risus id metus.</ListItem>
-                <ListItem>
+                <ListItem imageColor="brand">Aliquam tincidunt mauris eu risus.</ListItem>
+                <ListItem imageColor="brand">Vestibulum auctor dapibus neque.</ListItem>
+                <ListItem imageColor="brand">Nunc dignissim risus id metus.</ListItem>
+                <ListItem imageColor="brand">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
-                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
+                <ListItem imageColor="brand">Aliquam tincidunt mauris eu risus.</ListItem>
               </ListContainer>
             </Card>
             <Card>
               <ListContainer>
-                <ListItem>
+                <ListItem imageColor="brand">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
-                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
-                <ListItem>Vestibulum auctor dapibus neque.</ListItem>
-                <ListItem>Nunc dignissim risus id metus.</ListItem>
-                <ListItem>
+                <ListItem imageColor="brand">Aliquam tincidunt mauris eu risus.</ListItem>
+                <ListItem imageColor="brand">Vestibulum auctor dapibus neque.</ListItem>
+                <ListItem imageColor="brand">Nunc dignissim risus id metus.</ListItem>
+                <ListItem imageColor="brand">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </ListItem>
-                <ListItem>Aliquam tincidunt mauris eu risus.</ListItem>
+                <ListItem imageColor="brand">Aliquam tincidunt mauris eu risus.</ListItem>
               </ListContainer>
             </Card>
           </CardContainer>

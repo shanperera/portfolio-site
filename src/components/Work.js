@@ -18,6 +18,11 @@ class Work extends React.Component {
           title="Open to new opportunities"
           position="Full Stack Developer"
           technologies={["Java", "React", "Node", "Practically Anything"]}
+          dateTextColor="accentText"
+          titleTextColor="titleText"
+          positionTextColor="accentText"
+          imageColor="brand"
+          stackColor="brand"
         >
           <Box direction="row-responsive" gap="small">
             <Text>
@@ -41,23 +46,28 @@ class Work extends React.Component {
             "Ruby",
             "YAML",
           ]}
+          dateTextColor="accentText"
+          titleTextColor="titleText"
+          positionTextColor="accentText"
+          imageColor="brand"
+          stackColor="brand"
         >
-          <ListItem>
+          <ListItem imageColor="brand">
             Collaborated within a small team to maintain ELK (Elastic) platform
             for entire BMO organization.
           </ListItem>
-          <ListItem>
+          <ListItem imageColor="brand">
             Connected with project teams to assess relevant platform use cases
             and onboard projects on to platform.
           </ListItem>
-          <ListItem>
+          <ListItem imageColor="brand">
             Ensured platform and data ingestion pipeline long term stability.
           </ListItem>
-          <ListItem>
+          <ListItem imageColor="brand">
             Provide support for unexpected platform issues and minimize business
             impact to customers and stakeholders.
           </ListItem>
-          <ListItem>
+          <ListItem imageColor="brand">
             Create scripts to automate tasks in onboarding process.
           </ListItem>
         </TimelineEntry>
@@ -76,16 +86,21 @@ class Work extends React.Component {
             "Code Security",
             "Design Patterns",
           ]}
+          dateTextColor="accentText"
+          titleTextColor="titleText"
+          positionTextColor="accentText"
+          imageColor="brand"
+          stackColor="brand"
         >
-          <ListItem>
+          <ListItem imageColor="brand">
             Attended technical training courses in multiple fields involving
             computer science.
           </ListItem>
-          <ListItem>
+          <ListItem imageColor="brand">
             Completed all training courses with distinction for numerous
             platforms and skills
           </ListItem>
-          <ListItem>
+          <ListItem imageColor="brand">
             Mentored other trainees and offered assistance in learning new
             skills and improving overall training experience
           </ListItem>
