@@ -24,8 +24,8 @@ class About extends React.Component {
           stackColor="white"
         >
           <Box direction="row-responsive">
-            <Box gap="small">
-              <Text>
+            <Box gap="small" margin={{ bottom: "medium"}}>
+              <Text margin={{ bottom: "small"}}>
                 A website created by myself to act as a portfolio for my work
                 and personal projects. As well as demonstrate my web application
                 and design skills. This website was also used as a method of
@@ -46,8 +46,9 @@ class About extends React.Component {
                 chosen and created solely by myself with care.
               </ListItem>
             </Box>
-            <Box fill="horizontal" margin="small" width="small" height="small">
+            <Box align="center" fill="horizontal" margin="small" width="small" height="small">
               <Image fit="contain" src={Avatar} />
+              <Text size="small">My Flat Character Avatar</Text>
             </Box>
           </Box>
         </TimelineEntry>
@@ -59,8 +60,8 @@ class About extends React.Component {
           stackColor="white"
         >
           <Box direction="row-responsive">
-            <Box gap="small">
-              <Text>
+            <Box gap="small" margin={{ bottom: "medium"}}>
+              <Text margin={{ bottom: "medium"}}>
                 Created Java scripts for automating complex tasks in the online
                 game Oldschool Runescape using the RSPeer client and its Java
                 API. The scripts were designed to complete in-game actions and
@@ -75,7 +76,7 @@ class About extends React.Component {
                 preferences
               </ListItem>
               <ListItem>
-                Created tutorials & mentored new users and provide assistance
+                Created tutorials, mentored new users and provided assistance
                 with Java concepts to help them create their own scripts.
               </ListItem>
               <ListItem>
@@ -83,8 +84,9 @@ class About extends React.Component {
                 with over 6000 registered users and over 1500 daily active users
               </ListItem>
             </Box>
-            <Box fill="horizontal" margin="small" width="medium" height="small">
+            <Box gap="small" align="center" fill="horizontal" margin="small" width="medium" height="small">
               <Image fit="contain" src={RSPeer} />
+              <Text size="small">Snapshot used in my "Interface Explorer" Tutorial</Text>
             </Box>
           </Box>
         </TimelineEntry>
@@ -126,8 +128,9 @@ class About extends React.Component {
                 ></TechnologyEntry>
               </Box>
             </Box>
-            <Box margin="small" fill="horizontal" width="small" height="medium">
+            <Box gap="small" align="center" margin="small" fill="horizontal" width="small" height="medium">
               <Image fit="contain" src={SW} />
+              <Text size="small">Demo of Application Main Screen</Text>
             </Box>
           </Box>
         </TimelineEntry>
