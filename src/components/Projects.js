@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Text } from "grommet";
+import { Anchor, Box, Image, Text } from "grommet";
 import { BodyItem } from "./BodyItem";
 import { TechnologyEntry, TimelineEntry } from "./TimelineEntry";
 import SW from "../res/sw-image.jpg";
@@ -24,8 +24,8 @@ class About extends React.Component {
           stackColor="white"
         >
           <Box direction="row-responsive">
-            <Box gap="small" margin={{ bottom: "medium"}}>
-              <Text margin={{ bottom: "small"}}>
+            <Box gap="small" margin={{ bottom: "medium" }}>
+              <Text margin={{ bottom: "small" }}>
                 A website created by myself to act as a portfolio for my work
                 and personal projects. As well as demonstrate my web application
                 and design skills. This website was also used as a method of
@@ -46,12 +46,19 @@ class About extends React.Component {
                 chosen and created solely by myself with care.
               </ListItem>
             </Box>
-            <Box align="center" fill="horizontal" margin="small" width="small" height="small">
+            <Box
+              align="center"
+              fill="horizontal"
+              margin="small"
+              width="small"
+              height="small"
+            >
               <Image fit="contain" src={Avatar} />
               <Text size="small">My Flat Character Avatar</Text>
             </Box>
           </Box>
         </TimelineEntry>
+        <Anchor href="#RSPeer" name="RSPeer" />
         <TimelineEntry
           date="September 2018 - June 2020"
           title="RSPeer Scripting"
@@ -60,8 +67,8 @@ class About extends React.Component {
           stackColor="white"
         >
           <Box direction="row-responsive">
-            <Box gap="small" margin={{ bottom: "medium"}}>
-              <Text margin={{ bottom: "medium"}}>
+            <Box gap="small" margin={{ bottom: "medium" }}>
+              <Text margin={{ bottom: "medium" }}>
                 Created Java scripts for automating complex tasks in the online
                 game Oldschool Runescape using the RSPeer client and its Java
                 API. The scripts were designed to complete in-game actions and
@@ -69,11 +76,11 @@ class About extends React.Component {
                 game’s machine learning powered bot detection system.
               </Text>
               <ListItem>
-                Automated entity interactions and reactions to in-game events
-              </ListItem>
-              <ListItem>
                 Designed control logic based on in-game conditions and user
                 preferences
+              </ListItem>
+              <ListItem>
+                Scripts were subject to peer review and approval before public release
               </ListItem>
               <ListItem>
                 Created tutorials, mentored new users and provided assistance
@@ -84,9 +91,18 @@ class About extends React.Component {
                 with over 6000 registered users and over 1500 daily active users
               </ListItem>
             </Box>
-            <Box gap="small" align="center" fill="horizontal" margin="small" width="medium" height="small">
+            <Box
+              gap="small"
+              align="center"
+              fill="horizontal"
+              margin="small"
+              width="medium"
+              height="small"
+            >
               <Image fit="contain" src={RSPeer} />
-              <Text size="small">Snapshot used in my "Interface Explorer" Tutorial</Text>
+              <Text size="small">
+                Snapshot used in my "Interface Explorer" Tutorial
+              </Text>
             </Box>
           </Box>
         </TimelineEntry>
@@ -128,7 +144,14 @@ class About extends React.Component {
                 ></TechnologyEntry>
               </Box>
             </Box>
-            <Box gap="small" align="center" margin="small" fill="horizontal" width="small" height="medium">
+            <Box
+              gap="small"
+              align="center"
+              margin="small"
+              fill="horizontal"
+              width="small"
+              height="medium"
+            >
               <Image fit="contain" src={SW} />
               <Text size="small">Demo of Application Main Screen</Text>
             </Box>

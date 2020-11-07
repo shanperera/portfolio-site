@@ -20,31 +20,37 @@ class Contact extends React.Component {
           </Text>
           <Box direction="row-responsive" gap="small">
             <Anchor href="https://www.linkedin.com/in/shan-perera-32ba2070/">
-              <Icon
-                className="pulsate-fwd"
-                element={Linkedin}
-                elementColor="brand"
-                hoverColor="hover"
-                size="medium"
-              />
+              <Box>
+                <Icon
+                  className="pulsate-fwd"
+                  element={Linkedin}
+                  elementColor="brand"
+                  hoverColor="hover"
+                  size="medium"
+                />
+              </Box>
             </Anchor>
             <Anchor href="mailto:shan.perera7@pm.me">
-              <Icon
-                className="pulsate-fwd"
-                element={Mail}
-                elementColor="brand"
-                hoverColor="hover"
-                size="medium"
-              />
+              <Box>
+                <Icon
+                  className="pulsate-fwd"
+                  element={Mail}
+                  elementColor="brand"
+                  hoverColor="hover"
+                  size="medium"
+                />
+              </Box>
             </Anchor>
             <Anchor href="https://github.com/shanperera/">
-              <Icon
-                className="pulsate-fwd"
-                element={Github}
-                elementColor="brand"
-                hoverColor="hover"
-                size="medium"
-              />
+              <Box>
+                <Icon
+                  className="pulsate-fwd"
+                  element={Github}
+                  elementColor="brand"
+                  hoverColor="hover"
+                  size="medium"
+                />
+              </Box>
             </Anchor>
           </Box>
         </Box>

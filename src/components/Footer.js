@@ -5,36 +5,29 @@ import { Grommet, Node, Reactjs } from "grommet-icons";
 class Footer extends React.Component {
   render() {
     return (
-      <Box pad="small" background="#152238" height="xxsmall" flex="false">
+      <Box pad="small" background="titleText" height="xxsmall" flex="false">
         <Box justify="between" direction="row-responsive">
           <Text size="small">Copyright © {getCurrentYear()} Shan Perera</Text>
-
-          <Box align="center" direction="row-responsive">
-            <Text margin={{ right: "xsmall" }} size="small">
-              Design and Functionality by{" "}
+          
+          <Text size="small">
+          Design and Functionality by{" "}
               <Anchor
+                margin={{ right: "xsmall" }}
                 pad={{ right: "small" }}
                 href="https://github.com/shanperera/portfolio-site"
                 label="Me."
                 target="_new"
               />
-            </Text>
-            <Text margin={{ right: "xsmall" }}>
-              <Anchor href="https://reactjs.org/">
-                <Reactjs size="medium" color="plain" />
-              </Anchor>
-            </Text>
-            <Text margin={{ right: "xsmall" }}>
-              <Anchor href="https://nodejs.org/">
-                <Node size="medium" color="plain" />
-              </Anchor>
-            </Text>
-            <Text margin={{ right: "xsmall" }}>
-              <Anchor href="https://v2.grommet.io/">
-                <Grommet size="medium" color="plain" />
-              </Anchor>
-            </Text>
-          </Box>
+            <Anchor href="https://reactjs.org/">
+              <Reactjs size="small" color="plain" />{" "}
+            </Anchor>
+            <Anchor href="https://nodejs.org/">
+              <Node size="small" color="plain" />{" "}
+            </Anchor>
+            <Anchor href="https://v2.grommet.io/">
+              <Grommet size="small" color="plain" />
+            </Anchor>{" "}
+          </Text>
         </Box>
       </Box>
     );

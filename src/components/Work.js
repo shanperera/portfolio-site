@@ -30,7 +30,7 @@ class Work extends React.Component {
               need of a hard working yet easy going full stack developer who can
               learn new technologies with speedy efficiency and is very quick on
               their feet:
-              <Anchor href="#" label=" Contact Me." />
+              <Anchor href="#Contact" label=" Contact Me." />
             </Text>
           </Box>
         </TimelineEntry>

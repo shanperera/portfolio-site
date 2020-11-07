@@ -12,14 +12,13 @@ class Introduction extends React.Component {
         anchorName="Skills"
       >
         <Text color="white" size="medium">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          imperdiet nibh lorem, a commodo neque pharetra non. Sed cursus tortor
-          in mauris mollis, quis viverra mi scelerisque. Aliquam id faucibus
-          sem. Phasellus luctus magna nec tincidunt gravida. Fusce finibus
-          facilisis purus. Phasellus sit amet lobortis augue, eget fermentum
-          turpis. Pellentesque eu libero quis justo condimentum bibendum tempus
-          vitae purus. Ommodo neque pharetra non. Sed cursus tortor in mauris
-          mollis. Quis viverra mi scelerisque Aliquam id Phasellus sit amet.{" "}
+          I am a full stack developer and I enjoy coding in my spare time, among
+          many other things. I created this website to demonstrate my web design
+          skills and learn React through practical application. This is my first
+          project and website created using React. Feel free to reach out to me if you are
+          interested in putting my skills to use, or if you want to talk about
+          computers, cars, travelling, small form factor PCs, DIY engineering,
+          woodworking, painting, video games or UX design.
         </Text>
       </BodyItem>
     );

@@ -27,9 +27,16 @@ const theme = {
     hover: {
       textDecoration: "none",
       extend: {
-        color: "#8e59d4",
+        color: "#6FFFB0",
+        transition: "0.8s",
+        padding: "4px",
+        "background-color": "#7D4CDB",
+        "border-radius": "5px"
       },
     },
+    extend: {
+      transition: "0.8s"
+    }
   },
   box: {
     extend: "scroll-behavior: smooth;",
