@@ -1,6 +1,44 @@
 import React from "react";
 import { Box, Card as GrommetCard } from "grommet";
 
+export function SplitBackgroundCard(props) {
+  return (
+    <Box
+      background={props.background}
+      direction={props.direction}
+      fill={props.fill}
+      flex={props.flex}
+    >
+      <Header
+        title={props.title}
+        textColor={props.textColor}
+        topColor={props.topColor}
+        bottomColor={props.background}
+      ></Header>
+    </Box>
+  );
+}
+
+function Header(props) {
+  return (
+    <Box>
+      <Box align="center" background={props.topColor} height="xxsmall">
+        <Card
+          align="center"
+          pad="small"
+          fill="vertical"
+          width="medium"
+          elevation="none"
+          background="light-2"
+          round={{ size: "small", corner: "top" }}
+        >
+          {props.title}
+        </Card>
+      </Box>
+    </Box>
+  );
+}
+
 export function CardHeader(props) {
   return (
     <GrommetCard
@@ -43,11 +81,7 @@ export function Card(props) {
 
 export function CardContainer(props) {
   return (
-    <Box
-      direction="row-responsive"
-      justify="between"
-      gap="large"
-    >
+    <Box direction="row-responsive" justify="between" gap="large">
       {props.children}
     </Box>
   );

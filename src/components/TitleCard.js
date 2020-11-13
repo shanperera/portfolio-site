@@ -12,7 +12,7 @@ class TitleCard extends React.Component {
   render() {
     return (
       <Box
-        direction="row-responsive"
+        direction="row"
         justify="center"
         align="center"
         flex="false"

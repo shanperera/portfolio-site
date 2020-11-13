@@ -6,6 +6,7 @@ import { useElementHover } from "../functions/ElementHover";
 class Contact extends React.Component {
   render() {
     return (
+      <Box flex="false">
       <SplitBackgroundHeader
         title="Contact"
         background="titleText"
@@ -13,12 +14,12 @@ class Contact extends React.Component {
         topColor="brand"
       >
         <Anchor href="#Contact" name="Contact" />
-        <Box align="center" gap="small">
+        <Box pad="medium" align="center" gap="small">
           <Text>
             I am always open to new hiring opportunities and ideas for
             cooperation. Let's get in touch!
           </Text>
-          <Box direction="row-responsive" gap="small">
+          <Box direction="row" gap="small">
             <Anchor href="https://www.linkedin.com/in/shan-perera-32ba2070/">
               <Box>
                 <Icon
@@ -55,6 +56,7 @@ class Contact extends React.Component {
           </Box>
         </Box>
       </SplitBackgroundHeader>
+      </Box>
     );
   }
 }
@@ -67,9 +69,10 @@ function SplitBackgroundHeader(props) {
   return (
     <Box
       gap="medium"
-      flex="false"
       background={props.background}
       direction={props.direction}
+      fill={props.fill}
+      flex={props.flex}
     >
       <Header
         title={props.title}

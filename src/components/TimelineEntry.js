@@ -15,7 +15,7 @@ export function TimelineEntry(props) {
   return (
     <Box direction="row-responsive">
       <Box
-        direction="row-responsive"
+        direction="row"
         gap="small"
         align="center"
         justify="center"

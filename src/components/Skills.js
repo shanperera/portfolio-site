@@ -14,7 +14,7 @@ class Skills extends React.Component {
           align="center"
           direction="row-responsive"
         >
-          <CardContainer>
+           <CardContainer>
             <CardHeader>
               <Box className="shake-bottom">
                 <Code color="brand" size="large" />
@@ -110,7 +110,7 @@ class Skills extends React.Component {
                 </ListItem>
               </ListContainer>
             </Card>
-          </CardContainer>
+          </CardContainer> 
         </Box>
       </Box>
     );

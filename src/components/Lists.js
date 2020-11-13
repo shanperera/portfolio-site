@@ -6,8 +6,8 @@ export function ListItem(props) {
   return (
     <Box direction="row-responsive" align="center" overflow="auto">
       <Text size="medium" pad="small">
-        <Box direction="row-responsive">
-          <Box pad="xsmall">
+        <Box direction="row">
+          <Box margin={{ right: "small"}} pad="xsmall">
             <Next color={props.imageColor} size="small" />
           </Box>
           {props.children}

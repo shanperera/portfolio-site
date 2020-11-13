@@ -10,14 +10,14 @@ class SiteHeader extends React.Component {
   render() {
     return (
       <Box
-        direction="row-responsive"
+        direction="row"
         align="center"
         justify="between"
         flex="false"
         pad={{ top: "large", bottom: "xsmall", horizontal: "xlarge" }}
         border={{ color: "light-3", size: "xsmall", side: "bottom" }}
       >
-        <Box animation={{ type: "fadeIn", delay: "1000", duration: "2000" }}>
+        <Box animation={{ type: "fadeIn", delay: "250", duration: "2000" }}>
           <StyledAnchor href="/" size="xlarge" label="SP" />
         </Box>
         <Box direction="row-responsive" gap="medium">
