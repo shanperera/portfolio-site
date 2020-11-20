@@ -11,6 +11,7 @@ export function BodyItem(props) {
         margin={{ horizontal: "xlarge", vertical: "xsmall" }}
         pad={{ horizontal: "xlarge", vertical: "small" }}
       >
+        
         <Box
           align="center"
           justify="center"
