@@ -1,39 +1,64 @@
 import React from "react";
-import { Box, Card as GrommetCard } from "grommet";
+import { Box, Card as GrommetCard, Text } from "grommet";
 
 export function SplitBackgroundCard(props) {
   return (
-    <Box
-      background={props.background}
-      direction={props.direction}
-      fill={props.fill}
-      flex={props.flex}
-    >
-      <Header
-        title={props.title}
-        textColor={props.textColor}
-        topColor={props.topColor}
-        bottomColor={props.background}
-      ></Header>
+    <Box fill="true" background={props.bottomColor}>
+      <Box
+        background={props.background}
+        direction={props.direction}
+        fill={props.fill}
+        flex={props.flex}
+      >
+        <SplitBackgroundCardComponent
+          pad={{ top: "medium"}}
+          header={true}
+          title={props.title}
+          topColor={props.topColor}
+        ></SplitBackgroundCardComponent>
+      </Box>
+      <SplitBackgroundCardComponent pad={{ bottom: "large" }} bottomColor={props.bottomColor}>
+        {props.children}
+      </SplitBackgroundCardComponent>
     </Box>
   );
 }
 
-function Header(props) {
+function SplitBackgroundCardComponent(props) {
+  if (props.header) {
+    return (
+      <Box pad={props.pad}>
+        <Box flex align="center" background={props.topColor} height="xxsmall">
+          <GrommetCard
+            align="center"
+            pad="small"
+            fill="vertical"
+            width="medium"
+            elevation="none"
+            background="light-2"
+            round={{ size: "small", corner: "top" }}
+          >
+            {props.title}
+          </GrommetCard>
+        </Box>
+      </Box>
+    );
+  }
+
   return (
-    <Box>
-      <Box align="center" background={props.topColor} height="xxsmall">
-        <Card
+    <Box pad={props.pad}>
+      <Box flex align="center" background={props.bottomColor} height="xxsmall">
+        <GrommetCard
           align="center"
           pad="small"
           fill="vertical"
           width="medium"
           elevation="none"
           background="light-2"
-          round={{ size: "small", corner: "top" }}
+          round={{ size: "small", corner: "bottom" }}
         >
-          {props.title}
-        </Card>
+          {props.children}
+        </GrommetCard>
       </Box>
     </Box>
   );

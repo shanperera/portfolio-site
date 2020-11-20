@@ -4,7 +4,7 @@ import { Next } from "grommet-icons";
 
 export function ListItem(props) {
   return (
-    <Box direction="row-responsive" align="center" overflow="auto">
+    <Box flex="false" direction="row-responsive" align="center" overflow="auto">
       <Text size="medium" pad="small">
         <Box direction="row">
           <Box margin={{ right: "small"}} pad="xsmall">

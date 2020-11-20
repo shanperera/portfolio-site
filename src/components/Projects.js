@@ -20,7 +20,7 @@ class About extends React.Component {
           date="August 2020 - Current"
           title="Portfolio Website"
           position="ReactJS Developer Portfolio"
-          technologies={["React", "Node", "Grommet", "Github Pages"]}
+          technologies={["React", "Grommet", "Github Pages"]}
           stackColor="white"
         >
           <Box direction="row-responsive">
