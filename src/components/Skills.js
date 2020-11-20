@@ -1,8 +1,8 @@
 import React from "react";
 import { Anchor, Box, Text } from "grommet";
-import { Code, Deploy, Java, Reactjs } from "grommet-icons";
+import { Code, Deploy, Reactjs } from "grommet-icons";
 import { ListContainer, ListItem } from "./Lists";
-import { Card, CardContainer, CardHeader, SplitBackgroundCard } from "./Card";
+import { SplitBackgroundCard } from "./Card";
 
 const JavaTitle = (
   <Box className="shake-bottom">

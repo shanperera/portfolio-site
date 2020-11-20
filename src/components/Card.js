@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Card as GrommetCard, Text } from "grommet";
+import { Box, Card as GrommetCard } from "grommet";
 
 export function SplitBackgroundCard(props) {
   return (
