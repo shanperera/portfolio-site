@@ -21,9 +21,6 @@ class Footer extends React.Component {
             <Anchor href="https://reactjs.org/">
               <Reactjs size="small" color="plain" />{" "}
             </Anchor>
-            <Anchor href="https://nodejs.org/">
-              <Node size="small" color="plain" />{" "}
-            </Anchor>
             <Anchor href="https://v2.grommet.io/">
               <Grommet size="small" color="plain" />
             </Anchor>{" "}
