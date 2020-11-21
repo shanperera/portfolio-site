@@ -1,6 +1,6 @@
 import React from "react";
 import { Anchor, Box, Text } from "grommet";
-import { Grommet, Node, Reactjs } from "grommet-icons";
+import { Grommet, Reactjs } from "grommet-icons";
 
 class Footer extends React.Component {
   render() {

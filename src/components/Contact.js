@@ -1,5 +1,5 @@
 import React from "react";
-import { Anchor, Box, Card, Text } from "grommet";
+import { Anchor, Box, Text } from "grommet";
 import { Github, Linkedin, Mail } from "grommet-icons";
 import { SplitBackgroundCard } from "./Card";
 import { useElementHover } from "../functions/ElementHover";
@@ -78,75 +78,5 @@ function Icon(props) {
   return useElementHover(props);
 }
 
-function SplitBackgroundHeader(props) {
-  return (
-    <Box
-      gap="medium"
-      background={props.background}
-      direction={props.direction}
-      fill={props.fill}
-      flex={props.flex}
-    >
-      <Header
-        title={props.title}
-        textColor={props.textColor}
-        topColor={props.topColor}
-        bottomColor={props.background}
-      ></Header>
-      {props.children}
-    </Box>
-  );
-}
 
-function Header(props) {
-  return (
-    <Box>
-      <Box align="center" background={props.topColor} height="xxsmall">
-        <TitleCard isHeader={true}></TitleCard>
-      </Box>
-      <Box justify="start" align="center" background={props.background}>
-        <TitleCard isHeader={false}>
-          <Text
-            margin={{ bottom: "small" }}
-            color={props.textColor}
-            weight="bold"
-            size="xlarge"
-          >
-            {props.title}
-          </Text>
-        </TitleCard>
-      </Box>
-    </Box>
-  );
-}
-
-function TitleCard(props) {
-  if (props.isHeader) {
-    return (
-      <Card
-        align="center"
-        pad="small"
-        fill="vertical"
-        width="medium"
-        elevation="none"
-        background="light-2"
-        round={{ size: "small", corner: "top" }}
-      >
-        {props.children}
-      </Card>
-    );
-  }
-  return (
-    <Card
-      align="center"
-      pad={{ bottom: "medium" }}
-      width="medium"
-      elevation="none"
-      background="light-2"
-      round={{ size: "small", corner: "bottom" }}
-    >
-      {props.children}
-    </Card>
-  );
-}
 export default Contact;
