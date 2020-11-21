@@ -44,6 +44,10 @@ class Skills extends React.Component {
           background="brand"
           title={JavaTitle}
           textColor="titleText"
+          topPad={{ top: "medium", horizontal: "large" }}
+          bottomPad={{ bottom: "large", horizontal: "large"  }}
+          cardTopColor="light-2"
+          cardBottomColor="light-2"
         >
           <ListContainer>
             <ListItem imageColor="brand">
@@ -71,6 +75,10 @@ class Skills extends React.Component {
           background="brand"
           title={ReactTitle}
           textColor="titleText"
+          topPad={{ top: "medium", horizontal: "large" }}
+          bottomPad={{ bottom: "large", horizontal: "large"  }}
+          cardTopColor="light-2"
+          cardBottomColor="light-2"
         >
           <ListContainer>
             <ListItem imageColor="brand">
@@ -93,6 +101,10 @@ class Skills extends React.Component {
           background="brand"
           title={ProjectsTitle}
           textColor="titleText"
+          topPad={{ top: "medium", horizontal: "large" }}
+          bottomPad={{ bottom: "large", horizontal: "large"  }}
+          cardTopColor="light-2"
+          cardBottomColor="light-2"
         >
           <ListContainer>
             <ListItem imageColor="brand">

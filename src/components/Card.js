@@ -11,13 +11,18 @@ export function SplitBackgroundCard(props) {
         flex={props.flex}
       >
         <SplitBackgroundCardComponent
-          pad={{ top: "medium"}}
+          pad={props.topPad}
           header={true}
           title={props.title}
           topColor={props.topColor}
+          color={props.cardTopColor}
         ></SplitBackgroundCardComponent>
       </Box>
-      <SplitBackgroundCardComponent pad={{ bottom: "large" }} bottomColor={props.bottomColor}>
+      <SplitBackgroundCardComponent
+        pad={props.bottomPad}
+        bottomColor={props.bottomColor}
+        color={props.cardBottomColor}
+      >
         {props.children}
       </SplitBackgroundCardComponent>
     </Box>
@@ -35,8 +40,8 @@ function SplitBackgroundCardComponent(props) {
             fill="vertical"
             width="medium"
             elevation="none"
-            background="light-2"
             round={{ size: "small", corner: "top" }}
+            background={props.color}
           >
             {props.title}
           </GrommetCard>
@@ -54,8 +59,8 @@ function SplitBackgroundCardComponent(props) {
           fill="vertical"
           width="medium"
           elevation="none"
-          background="light-2"
           round={{ size: "small", corner: "bottom" }}
+          background={props.color}
         >
           {props.children}
         </GrommetCard>

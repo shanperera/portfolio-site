@@ -23,8 +23,8 @@ export function BodyItem(props) {
         </Box>
       </Box>
       <Box
-        margin={{ horizontal: "xlarge", vertical: "xsmall" }}
-        pad={{ horizontal: "xlarge", vertical: "small" }}
+        margin={{ horizontal: "large", vertical: "xsmall" }}
+        pad={{ horizontal: "large", vertical: "small" }}
       >
         {props.children}
       </Box>
