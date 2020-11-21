@@ -1,17 +1,51 @@
 import React from "react";
-import { Anchor, Box, Text, Menu, ResponsiveContext } from "grommet";
+import { Anchor, Box, Menu, Text, ResponsiveContext } from "grommet";
+import { Menu as MenuIcon } from "grommet-icons";
 import styled from "styled-components";
 
 const StyledAnchor = styled(Anchor)`
   font-family: Sansita Swashed;
 `;
 
-const StyledMenu = styled(Menu)`
-  label:hover {
-    background: red;
-  }
-`;
+const NavHome = (
+  <Box fill="horizontal" align="center">
+    <Text color="brand" weight="bold" size="medium">
+      Home
+    </Text>
+  </Box>
+);
 
+const NavSkills = (
+  <Box fill="horizontal" align="center">
+    <Text color="brand" weight="bold" size="medium">
+      Skills
+    </Text>
+  </Box>
+);
+
+const NavWork = (
+  <Box fill="horizontal" align="center">
+    <Text color="brand" weight="bold" size="medium">
+      Work
+    </Text>
+  </Box>
+);
+
+const NavProjects = (
+  <Box fill="horizontal" align="center">
+    <Text color="brand" weight="bold" size="medium">
+      Projects
+    </Text>
+  </Box>
+);
+
+const NavContact = (
+  <Box fill="horizontal" align="center">
+    <Text color="brand" weight="bold" size="medium">
+      Contact
+    </Text>
+  </Box>
+);
 class SiteHeader extends React.Component {
   render() {
     return (
@@ -54,63 +88,16 @@ function FullSizeHeader() {
 
 function MobileHeader() {
   return (
-    <StyledMenu
-      label={<Text color="brand">Navigation</Text>}
+    <Menu
+      icon={<MenuIcon color="brand" size="medium" />}
       items={[
-        {
-          label: (
-            <Box fill="horizontal" align="center">
-              <Anchor className="jello-horizontal" href="#Home" label="Home" />
-            </Box>
-          ),
-          href: "#Home",
-        },
-        {
-          label: (
-            <Box fill="horizontal" align="center">
-              <Anchor
-                className="jello-horizontal"
-                href="#Skills"
-                label="Skills"
-              />
-            </Box>
-          ),
-          href: "#Skills",
-        },
-        {
-          label: (
-            <Box fill="horizontal" align="center">
-              <Anchor className="jello-horizontal" href="#Work" label="Work" />
-            </Box>
-          ),
-          href: "#Work",
-        },
-        {
-          label: (
-            <Box fill="horizontal" align="center">
-              <Anchor
-                className="jello-horizontal"
-                href="#Projects"
-                label="Projects"
-              />
-            </Box>
-          ),
-          href: "#Projects",
-        },
-        {
-          label: (
-            <Box fill="horizontal" align="center">
-              <Anchor
-                className="jello-horizontal"
-                href="#Contact"
-                label="Contact"
-              />
-            </Box>
-          ),
-          href: "#Contact",
-        },
+        { label: NavHome, href: "#Home" },
+        { label: NavSkills, href: "#Skills" },
+        { label: NavWork, href: "#Work" },
+        { label: NavProjects, href: "#Projects" },
+        { label: NavContact, href: "#Contact" },
       ]}
-    ></StyledMenu>
+    ></Menu>
   );
 }
 
