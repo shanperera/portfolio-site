@@ -74,7 +74,7 @@ export function TechnologyEntry(props) {
 
 function TechnologyCard(props) {
   return (
-    <Card background={props.stackColor} pad="xsmall" elevation="xsmall">
+    <Card background={props.stackColor} align="center" pad="xsmall" elevation="xsmall">
       {props.children}
     </Card>
   );
